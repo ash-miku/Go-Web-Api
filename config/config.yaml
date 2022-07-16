@@ -1,0 +1,21 @@
+App: ExecutionPlatform
+Version: "1.0.0"
+DB:
+  Project: miku
+  Driver: mysql
+  Name: ly_test
+  Host: "127.0.0.1"
+  Port: 33306
+  User: root
+  Password: bHkxMjM0NTY=
+  Charset: utf8mb4
+  Sslmode: disable
+  DmsPublic: dms_public # 公共表的存放目录 包含errors tenant licenses
+  ParseTime: true
+  Loc: Local
+#  redis服务
+Redis:
+  Address: "localhost:36379"
+  Password:
+# 应用session过期时间，单位秒
+SessionExpireTime: 1800
