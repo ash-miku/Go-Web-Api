@@ -78,7 +78,7 @@ func LogInit(c *cli.Context) {
 	// Create the formatter for stdout output.
 	stdFmt = &formatter{
 		isStdout:    false,
-		serviceName: "Control",
+		serviceName: "Go-Web-Api",
 	}
 
 	// Std logger.

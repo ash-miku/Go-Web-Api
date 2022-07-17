@@ -3,7 +3,7 @@ Version: "1.0.0"
 DB:
   Project: miku
   Driver: mysql
-  Name: ly_test
+  Name: go_web_api
   Host: "127.0.0.1"
   Port: 33306
   User: root
