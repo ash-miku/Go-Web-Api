@@ -1,6 +1,7 @@
 package router
 
 import (
+	"go-api/api"
 	"go-api/common"
 	"net/http"
 
@@ -27,6 +28,8 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 	g.GET("/health", func(context *gin.Context) {
 		common.LogInfo("check interfaces success")
 	})
+
+	g.GET("/v1/bili/video/info", api.GetVideoInfo)
 
 	return g
 }

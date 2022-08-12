@@ -52,6 +52,11 @@ func SessionCheck(c *gin.Context) {
 		c.Next()
 		return
 	}
+	// 绕过B站接口
+	if strings.Contains(c.Request.URL.Path, "bili") {
+		c.Next()
+		return
+	}
 
 	Session_id := c.Request.Header.Get("Session")
 	if len(Session_id) == 0 {
